@@ -2,7 +2,7 @@
 This research project is to see if the current state of technology, and machine learning algorithms, are sufficient in their ability to automate simple tasks and be more efficient with our missions in SAR and our data collection capabilities.
 
 Annotating images to be able to identify where a track-line is:
-<img width="987" height="983" alt="image" src="https://github.com/user-attachments/assets/e4366c7e-8e7f-43fa-9b7a-ae8348fb8e76" />
+<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/e4366c7e-8e7f-43fa-9b7a-ae8348fb8e76" />
 
 
 An example of the model learning to being able to identify "track lines".
@@ -19,7 +19,7 @@ What is being used:
 
     Keras: The high-level API you initially used to load and interact with your image classification model from Teachable Machine.
 
-    YOLOv8 (ultralytics library): The powerful object detection framework you are now using to train your custom footprint detector.
+    YOLOv8 (ultralytics library): Object detection framework you are now using to train your custom footprint detector.
 
     Pillow (PIL): A key library used to open, resize, and handle image files in your Python scripts.
 
