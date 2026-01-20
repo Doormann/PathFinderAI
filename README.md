@@ -8,29 +8,7 @@ Annotating images to be able to identify where a track-line is:
 An example of the model learning to being able to identify "track lines".
 <img width="661" height="665" alt="image" src="https://github.com/user-attachments/assets/c9867010-dd20-498f-a25c-aeb1a0372cc0" />
 
-Here is the command to train the model: yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640
-Here is the command to run the model: yolo task=detect mode=predict model='runs/detect/train/weights/best.pt' source='path/to/some/new_image.jpg'
-
-What is being used:
-
-    Python: The primary programming language used for all the scripts.
-
-    TensorFlow: The underlying deep learning framework that powers both the initial Keras model and the final YOLOv8 model.
-
-    Keras: The high-level API you initially used to load and interact with your image classification model from Teachable Machine.
-
-    YOLOv8 (ultralytics library): Object detection framework you are now using to train your custom footprint detector.
-
-    Pillow (PIL): A key library used to open, resize, and handle image files in your Python scripts.
-
-    NumPy: The fundamental library for numerical operations in Python, used for handling images as arrays of numbers.
-
-    OpenCV (opencv-python): Used for advanced image processing, specifically for creating and overlaying the Grad-CAM heatmap visualizations.
-
-    LabelImg: The standalone desktop application you are using to draw bounding boxes on your images and create the .txt annotation files for training.
-
-    CVAT (Computer Vision Annotation Tool): The more advanced, browser-based tool that was mentioned as a powerful alternative to LabelImg for larger projects.
-
-    Tkinter: Python's built-in library for creating graphical user interfaces (GUIs). We used it to create the file selection dialog window.
-
-    PyQt5: A GUI framework that LabelImg is built on. We had to manage its specific version to resolve the error when drawing bounding boxes
+Here is the command to train the model: ``bash
+yolo task=detect mode=train model=yolov8n.pt data=data.yaml epochs=50 imgsz=640``
+Here is the command to run the model: `` bash 
+yolo task=detect mode=predict model='runs/detect/train/weights/best.pt' source='path/to/some/new_image.jpg'``
