@@ -1,0 +1,11 @@
+# Path to the training images folder
+train: Annotated\images\train
+
+# Path to the validation images folder
+val: Annotated\images\val
+
+# Number of classes you are detecting
+nc: 1
+
+# The names of your classes, in order
+names: ['footprint']
